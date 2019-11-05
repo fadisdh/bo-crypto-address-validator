@@ -1,6 +1,7 @@
 var XRPValidator = require('./ripple_validator');
 var ETHValidator = require('./ethereum_validator');
 var BTCValidator = require('./bitcoin_validator');
+var EOSValidator = require('./eos_validator');
 var XMRValidator = require('./monero_validator');
 var NANOValidator = require('./nano_validator');
 
@@ -40,6 +41,11 @@ var CURRENCIES = [{
     symbol: 'frc',
     addressTypes: {prod: ['00', '05'], testnet: ['6f', 'c4']},
     validator: BTCValidator
+},{
+    name: 'eosio',
+    symbol: 'eos',
+    addressTypes: {prod: ['00', '05'], testnet: ['6f', 'c4']},
+    validator: EOSValidator
 },{
     name: 'protoshares',
     symbol: 'pts',

@@ -275,6 +275,12 @@ describe('WAValidator.validate()', function () {
             valid('rDTXLQ7ZKZVKz33zJbHjgVShjsBnqMBhmN', 'XRP');
         });
 
+        it('should return true for correct eosio addresses', function () {
+            valid('gqztenjzgege', 'eosio');
+            valid('crjueulwwv4i', 'eos');
+            valid('e433wg4nowc2', 'eos');
+        });
+
         it('should return true for correct dash addresses', function () {
             valid('Xx4dYKgz3Zcv6kheaqog3fynaKWjbahb6b', 'dash');
             valid('XcY4WJ6Z2Q8w7vcYER1JypC8s2oa3SQ1b1', 'DASH');

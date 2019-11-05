@@ -3,7 +3,7 @@ Simple wallet address validator for validating Bitcoin and other altcoins addres
 
 Forked from [ognus/wallet-address-validator](https://github.com/ognus/wallet-address-validator).
 
-**File size is ~22 kB (minifed and gzipped)**.
+**File size is ~24 kB (minifed and gzipped)**.
 
 ## Installation
 

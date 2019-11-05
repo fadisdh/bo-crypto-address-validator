@@ -12,6 +12,7 @@
     "ripple",
     "dash",
     "neo",
+    "eos",
     "gas",
     "komodo",
     "zcash",
@@ -31,13 +32,13 @@
     "browser",
     "nodejs"
   ],
-  "version": "0.2.4",
-  "author": "Tomek Kolasa <tomek@kolasa.me>",
-  "homepage": "https://github.com/ognus/wallet-address-validator",
+  "version": "0.2.5",
+  "author": "Fadi Saadeh <fadisdh@gmail.com>",
+  "homepage": "https://github.com/fadisdh/wallet-address-validator",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ognus/wallet-address-validator.git"
+    "url": "https://github.com/fadisdh/wallet-address-validator.git"
   },
   "main": "src/wallet_address_validator",
   "engines": {
