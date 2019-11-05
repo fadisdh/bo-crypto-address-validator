@@ -1,5 +1,5 @@
 {
-  "name": "crypto-address-validator",
+  "name": "bo-crypto-address-validator",
   "description": "Wallet address validator for Bitcoin and other Altcoins.",
   "keywords": [
     "btc",
@@ -34,11 +34,11 @@
   ],
   "version": "0.2.5",
   "author": "Fadi Saadeh <fadisdh@gmail.com>",
-  "homepage": "https://github.com/fadisdh/crypto-address-validator",
+  "homepage": "https://github.com/fadisdh/bo-crypto-address-validator",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/fadisdh/crypto-address-validator.git"
+    "url": "https://github.com/fadisdh/bo-crypto-address-validator.git"
   },
   "main": "src/wallet_address_validator",
   "engines": {

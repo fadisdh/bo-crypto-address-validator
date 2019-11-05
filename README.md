@@ -9,7 +9,7 @@ Forked from [ognus/wallet-address-validator](https://github.com/ognus/wallet-add
 
 ### NPM
 ```
-npm install crypto-address-validator
+npm install bo-crypto-address-validator
 ```
 
 ### Browser
