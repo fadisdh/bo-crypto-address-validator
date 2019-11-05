@@ -5,6 +5,7 @@ var BCHValidator = require('./bitcoincash_validator');
 var EOSValidator = require('./eos_validator');
 var XMRValidator = require('./monero_validator');
 var NANOValidator = require('./nano_validator');
+var XLMValidator = require ('./lumen_validator');
 
 // defines P2PKH and P2SH address types for standard (prod) and testnet networks
 var CURRENCIES = [{
@@ -22,6 +23,10 @@ var CURRENCIES = [{
     symbol: 'ltc',
     addressTypes: {prod: ['30', '05', '32'], testnet: ['6f', 'c4', '3a']},
     validator: BTCValidator
+},{
+    name: 'stellarlumens',
+    symbol: 'xlm',
+    validator: XLMValidator
 },{
     name: 'peercoin',
     symbol: 'ppc',

@@ -92,6 +92,11 @@ describe('WAValidator.validate()', function () {
             valid('QjpzxpbLp5pCGsCczMbfh1uhC3P89QZavY', 'litecoin', 'testnet');
         });
 
+        it('should return true for correct Stellar Lumens addresses', () => {
+            valid('GAHK7EEG2WWHVKDNT4CEQFZGKF2LGDSW2IVM4S5DP42RBW3K6BTODB4A', 'xlm'),
+            valid('GAHK7EEG2WWHVKDNT4CEQFZGKF2LGDSW2IVM4S5DP42RBW3K6BTODB4A', 'stellarlumens')
+        })
+
         it('should return true for correct peercoin addresses', function () {
             valid('PHCEsP6od3WJ8K2WKWEDBYKhH95pc9kiZN', 'peercoin');
             valid('PSbM1pGoE9dnAuVWvpQqTTYVpKZU41dNAz', 'peercoin');
@@ -401,6 +406,7 @@ describe('WAValidator.validate()', function () {
             invalid('1A1zP1ePQGefi2DMPTifTL5SLmv7DivfNa', currency); //reject invalid address
             invalid('bd839e4f6fadb293ba580df5dea7814399989983', currency);  //reject transaction id's
             invalid('bitcoincash:qph5kuz78czq00e3t85ugpgd9xmer5kr7c5f6jdpwk', currency);  //invalid cashaddr
+            invalid('GAHK7EEG2WWHVKDNT4CEQFZGKF2LGDSW2IWM4S5DP42RBW3K6BTODB4A', currency) //invalid xlm
             //testnet
             invalid('', currency, 'testnet'); //reject blank
             invalid('%%@', currency, 'testnet'); //reject invalid base58 string
@@ -419,6 +425,10 @@ describe('WAValidator.validate()', function () {
         it('should return false for incorrect litecoin addresses', function () {
             commonTests('litecoin');
         });
+
+        it('should return false for incorrect Stellar Lumens addresses', () => {
+            commonTests('xlm')
+        })
 
         it('should return false for incorrect peercoin addresses', function () {
             commonTests('peercoin');

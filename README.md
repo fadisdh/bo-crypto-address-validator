@@ -3,12 +3,12 @@ Simple wallet address validator for validating Bitcoin and other altcoins addres
 
 Forked from [ognus/wallet-address-validator](https://github.com/ognus/wallet-address-validator).
 
-**File size is ~32K (minifed and gzipped)**.
+**File size is ~40K (minifed and gzipped)**.
 
 ## Whats new
 = Support for eosio / EOS
 - Support cashAddr for Bitcoin Cash / BCH
-
+- Support for Stellar Lumens / XLM
 
 ## Installation
 
@@ -68,6 +68,8 @@ npm install bo-crypto-address-validator
 * Litecoin/LTC, `'litecoin'` or `'LTC'`
 
 * Eosio/EOS, `'eosio'` or `'EOS'`
+
+* StellarLumens/XLM, , `'stellarlumens'` or `'XLM'`
 
 * Megacoin/MEC, `'megacoin'` or `'MEC'`
 
