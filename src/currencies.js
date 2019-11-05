@@ -1,6 +1,7 @@
 var XRPValidator = require('./ripple_validator');
 var ETHValidator = require('./ethereum_validator');
 var BTCValidator = require('./bitcoin_validator');
+var BCHValidator = require('./bitcoincash_validator');
 var EOSValidator = require('./eos_validator');
 var XMRValidator = require('./monero_validator');
 var NANOValidator = require('./nano_validator');
@@ -14,8 +15,8 @@ var CURRENCIES = [{
 },{
     name: 'bitcoincash',
     symbol: 'bch',
-    addressTypes: {prod: ['00', '05'], testnet: ['6f', 'c4']},
-    validator: BTCValidator
+    addressTypes: {prod: ['00', '05', 'bitcoincash'], testnet: ['6f', 'c4', 'bchtest']},
+    validator: BCHValidator
 },{
     name: 'litecoin',
     symbol: 'ltc',

@@ -72,6 +72,10 @@ describe('WAValidator.validate()', function () {
             // p2sh addresses
             valid('3NJZLcZEEYBpxYEUGewU4knsQRn1WM5Fkt', 'bitcoincash');
             valid('2MxKEf2su6FGAUfCEAHreGFQvEYrfYNHvL7', 'bitcoincash', 'testnet');
+
+            // cashaddr
+            valid('bitcoincash:qzxf0wl63ahx6jsxu8uuldcw7n5aatwppvnteraqaw', 'bch');
+            valid('bitcoincash:qph5kuz78czq00e3t85ugpgd7xmer5kr7c5f6jdpwk', 'bitcoincash');
         });
 
         it('should return true for correct litecoin addresses', function () {
@@ -396,6 +400,7 @@ describe('WAValidator.validate()', function () {
             invalid('%%@', currency); //reject invalid base58 string
             invalid('1A1zP1ePQGefi2DMPTifTL5SLmv7DivfNa', currency); //reject invalid address
             invalid('bd839e4f6fadb293ba580df5dea7814399989983', currency);  //reject transaction id's
+            invalid('bitcoincash:qph5kuz78czq00e3t85ugpgd9xmer5kr7c5f6jdpwk', currency);  //invalid cashaddr
             //testnet
             invalid('', currency, 'testnet'); //reject blank
             invalid('%%@', currency, 'testnet'); //reject invalid base58 string
@@ -457,6 +462,13 @@ describe('WAValidator.validate()', function () {
 
         it('should return false for incorrect garlicoin addresses', function () {
             commonTests('garlicoin');
+        });
+
+        it('should return false for incorrect esoio addresses', function () {
+            commonTests('zcash');
+            invalid('gpmlu5krtipla', 'EOS');
+            invalid('gpmlu5krtipl21', 'EOS');
+            invalid('gpmlu5rtipl', 'eosio', 'testnet');
         });
 
         it('should return false for incorrect vertcoin addresses', function () {
