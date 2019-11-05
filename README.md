@@ -9,7 +9,7 @@ Forked from [ognus/wallet-address-validator](https://github.com/ognus/wallet-add
 
 ### NPM
 ```
-npm install wallet-address-validator
+npm install crypto-address-validator
 ```
 
 ### Browser
@@ -61,6 +61,8 @@ npm install wallet-address-validator
 * Komodo/KMD, `'komodo'` or `'KMD'`
 
 * Litecoin/LTC, `'litecoin'` or `'LTC'`
+
+* Eosio/EOS, `'eosio'` or `'EOS'`
 
 * Megacoin/MEC, `'megacoin'` or `'MEC'`
 
