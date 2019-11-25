@@ -24,11 +24,12 @@ var CURRENCIES = [{
     symbol: 'ltc',
     addressTypes: {prod: ['30', '05', '32'], testnet: ['6f', 'c4', '3a']},
     validator: BTCValidator
-},{
+},{ // Support ETH address only for now
     name: 'Tether',
     symbol: 'usdt',
-    addressTypes: { prod: ['00', '05'], testnet: ['6f', 'c4'] },
-    validator: BTCValidator
+    validator: ETHValidator
+    // addressTypes: { prod: ['00', '05'], testnet: ['6f', 'c4'] },
+    // validator: BTCValidator
 },{
     name: 'stellarlumens',
     symbol: 'xlm',

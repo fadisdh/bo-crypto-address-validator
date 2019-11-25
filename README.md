@@ -11,7 +11,7 @@ Forked from [ognus/wallet-address-validator](https://github.com/ognus/wallet-add
 - Support for Stellar Lumens / XLM
 - Support ofr OMG, ZRX and BAT
 - Support ofr Algorand/ALG
-- Support for Tether/USDT
+- Support for Tether/USDT (ETH address only for now)
 
 ## Installation
 
@@ -49,7 +49,7 @@ npm install bo-crypto-address-validator
 * BitcoinPrivate/BTCP, `'bitcoinprivate'` or `'BTCP'`
 * BitcoinZ/BTCZ, `'bitcoinz'` or `'BTCZ'`
 
-* Tether/USDT, `'Tether'` or `'USDT'`
+* Tether/USDT, `'Tether'` or `'USDT'` (ETH address only for now)
 * OmiseGO/OMG, `'OmiseGO'` or `'OMG'`
 * 0x/ZRX, `'0x'` or `'ZRX'`
 * BAT/BAT, `'BAT'`

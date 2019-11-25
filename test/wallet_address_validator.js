@@ -102,7 +102,7 @@ describe('WAValidator.validate()', function () {
         })
 
         it('should return true for correct Tether addresses', () => {
-            valid('1Kr1LX2LaowzUT7T79FxubVtLAQF63EsAw', 'usdt')
+            valid('0xAceBabe64807cb045505b268ef253D8fC2FeF5Bc', 'usdt')
         })
 
         it('should return true for correct OmiseGO addresses', () => {
@@ -646,7 +646,7 @@ describe('WAValidator.validate()', function () {
         })
 
         it('should return true for correct Tether addresses', () => {
-            invalid('1Kr1LX2LaowzUT7T79FxubVtLAQF33EsAw', 'usdt')
+            invalid('0xAceBabe64807cb045505b268ef753D8fC2FeF5Bc', 'usdt')
         })
 
         it('should return true for correct OmiseGO addresses', () => {
