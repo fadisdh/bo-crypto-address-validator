@@ -97,6 +97,22 @@ describe('WAValidator.validate()', function () {
             valid('GAHK7EEG2WWHVKDNT4CEQFZGKF2LGDSW2IVM4S5DP42RBW3K6BTODB4A', 'stellarlumens')
         })
 
+        it('should return true for correct Algorand addresses', () => {
+            valid('PUREXXP2S2IIOUP7ZSBIVBHOA54ZLYNND5G3YIENSAHJZ5D7AAYSCM7K5E', 'alg')
+        })
+
+        it('should return true for correct Tether addresses', () => {
+            valid('1Kr1LX2LaowzUT7T79FxubVtLAQF63EsAw', 'usdt')
+        })
+
+        it('should return true for correct OmiseGO addresses', () => {
+            valid('0xAceBabe64807cb045505b268ef253D8fC2FeF5Bc', 'omg')
+        })
+
+        it('should return true for correct BAT addresses', () => {
+            valid('0xAceBabe64807cb045505b268ef253D8fC2FeF5Bc', 'bat')
+        })
+
         it('should return true for correct peercoin addresses', function () {
             valid('PHCEsP6od3WJ8K2WKWEDBYKhH95pc9kiZN', 'peercoin');
             valid('PSbM1pGoE9dnAuVWvpQqTTYVpKZU41dNAz', 'peercoin');
@@ -623,5 +639,22 @@ describe('WAValidator.validate()', function () {
             invalid('xrb_1111111112111111111111111111111111111111111111111111hifc8npp', 'nano');
             invalid('nano_111111111111111111111111111111111111111111111111111hifc8npp', 'nano');
         });
+
+        it('should return true for correct Algorand addresses', () => {
+            invalid('PUREXXP2S2IIOUP7ZSBIVBHOA54Z0YNND5G3YIENSAHJZ5D7AAYSCM7K5E', 'alg')
+            invalid('PUREXXP2S2IIOUP7ZSBIVBHOA54ZYNND5G3YIENSAHJZ5D7AAYSCM7K5E', 'alg')
+        })
+
+        it('should return true for correct Tether addresses', () => {
+            invalid('1Kr1LX2LaowzUT7T79FxubVtLAQF33EsAw', 'usdt')
+        })
+
+        it('should return true for correct OmiseGO addresses', () => {
+            invalid('0xAceBabe64807cb045505b268ef453D8fC2FeF5Bc', 'omg')
+        })
+
+        it('should return true for correct BAT addresses', () => {
+            invalid('0xAceBabe64807cb045505b268ef753D8fC2FeF5Bc', 'bat')
+        })
     });
 });
