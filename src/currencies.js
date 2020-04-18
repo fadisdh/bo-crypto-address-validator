@@ -7,6 +7,7 @@ var XMRValidator = require('./monero_validator');
 var NANOValidator = require('./nano_validator');
 var XLMValidator = require ('./lumen_validator');
 var ALGValidator = require('./algorand_validator');
+var XTZValidator = require('./tezos_validator');
 
 // defines P2PKH and P2SH address types for standard (prod) and testnet networks
 var CURRENCIES = [{
@@ -244,6 +245,10 @@ var CURRENCIES = [{
     name: 'raiblocks',
     symbol: 'xrb',
     validator: NANOValidator,
+},{
+    name: 'tezos',
+    symbol: 'xtz',
+    validator: XTZValidator
 }];
 
 

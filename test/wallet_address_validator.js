@@ -413,6 +413,11 @@ describe('WAValidator.validate()', function () {
             valid('xrb_1q79ahdr36uqn38p5tp5sqwkn73rnpj1k8obtuetdbjcx37d5gahhd1u9cuh', 'nano');
             valid('nano_1q79ahdr36uqn38p5tp5sqwkn73rnpj1k8obtuetdbjcx37d5gahhd1u9cuh', 'nano');
         });
+
+        it('should return true for correct Tezos addresses', function () {
+            valid('tz1LaUPzME3GbwrDQkrmbpckJYcbh8EW1Me8', 'XTZ');
+            valid('tz1LaUPzME3GbwrDQkrmbpckJYcbh8EW1Me8', 'tezos');
+        });
     });
 
     describe('invalid results', function () {
@@ -640,21 +645,26 @@ describe('WAValidator.validate()', function () {
             invalid('nano_111111111111111111111111111111111111111111111111111hifc8npp', 'nano');
         });
 
-        it('should return true for correct Algorand addresses', () => {
+        it('should return false for incorrect Algorand addresses', () => {
             invalid('PUREXXP2S2IIOUP7ZSBIVBHOA54Z0YNND5G3YIENSAHJZ5D7AAYSCM7K5E', 'alg')
             invalid('PUREXXP2S2IIOUP7ZSBIVBHOA54ZYNND5G3YIENSAHJZ5D7AAYSCM7K5E', 'alg')
-        })
+        });
 
-        it('should return true for correct Tether addresses', () => {
+        it('should return false for incorrect Tether addresses', () => {
             invalid('0xAceBabe64807cb045505b268ef753D8fC2FeF5Bc', 'usdt')
-        })
+        });
 
-        it('should return true for correct OmiseGO addresses', () => {
+        it('should return false for incorrect OmiseGO addresses', () => {
             invalid('0xAceBabe64807cb045505b268ef453D8fC2FeF5Bc', 'omg')
-        })
+        });
 
-        it('should return true for correct BAT addresses', () => {
+        it('should return false for incorrect BAT addresses', () => {
             invalid('0xAceBabe64807cb045505b268ef753D8fC2FeF5Bc', 'bat')
-        })
+        });
+
+        it('should return false for incorrect Tezos addresses', function () {
+            invalid('az1LaUPzME3GbwrDQkrmbpckJYcbh8EW1Me8', 'XTZ');
+            invalid('tz1LaUPzME3GbwrDQkrmbpckJYcbh8EW1Me', 'tezos');
+        });
     });
 });

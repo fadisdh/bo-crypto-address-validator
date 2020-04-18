@@ -7985,6 +7985,7 @@ var XMRValidator = require('./monero_validator');
 var NANOValidator = require('./nano_validator');
 var XLMValidator = require ('./lumen_validator');
 var ALGValidator = require('./algorand_validator');
+var XTZValidator = require('./tezos_validator');
 
 // defines P2PKH and P2SH address types for standard (prod) and testnet networks
 var CURRENCIES = [{
@@ -8222,6 +8223,10 @@ var CURRENCIES = [{
     name: 'raiblocks',
     symbol: 'xrb',
     validator: NANOValidator,
+},{
+    name: 'tezos',
+    symbol: 'xtz',
+    validator: XTZValidator
 }];
 
 
@@ -8238,7 +8243,7 @@ module.exports = {
     }
 };
 
-},{"./algorand_validator":38,"./bitcoin_validator":39,"./bitcoincash_validator":40,"./eos_validator":51,"./ethereum_validator":52,"./lumen_validator":53,"./monero_validator":54,"./nano_validator":55,"./ripple_validator":56}],51:[function(require,module,exports){
+},{"./algorand_validator":38,"./bitcoin_validator":39,"./bitcoincash_validator":40,"./eos_validator":51,"./ethereum_validator":52,"./lumen_validator":53,"./monero_validator":54,"./nano_validator":55,"./ripple_validator":56,"./tezos_validator":57}],51:[function(require,module,exports){
 module.exports = {
   isValidAddress: function (address) {
     if (/^[a-z0-9]+$/.test(address) && address.length === 12) {
@@ -8452,6 +8457,30 @@ module.exports = {
 };
 
 },{"./crypto/utils":49,"base-x":1}],57:[function(require,module,exports){
+var base58 = require('./crypto/base58')
+
+function getDecoded (address) {
+  try {
+    return base58.decode(address)
+  } catch (e) {
+    // if decoding fails, assume invalid address
+    return null
+  }
+}
+
+module.exports = {
+  isValidAddress: function (address) {
+    var lowerCaseAddress = address.toLowerCase();
+    var decoded = getDecoded(address)
+
+    if (!address.length === 36 || !(lowerCaseAddress.startsWith('tz') || lowerCaseAddress.startsWith('kt')) || !decoded || !Array.isArray(decoded) || decoded.length !== 27) {
+      return false
+    }
+
+    return true
+  }
+}
+},{"./crypto/base58":41}],58:[function(require,module,exports){
 var currencies = require('./currencies');
 
 var DEFAULT_CURRENCY_NAME = 'bitcoin';
@@ -8468,5 +8497,5 @@ module.exports = {
     },
 };
 
-},{"./currencies":50}]},{},[57])(57)
+},{"./currencies":50}]},{},[58])(58)
 });

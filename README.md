@@ -12,6 +12,7 @@ Forked from [ognus/wallet-address-validator](https://github.com/ognus/wallet-add
 - Support ofr OMG, ZRX and BAT
 - Support ofr Algorand/ALG
 - Support for Tether/USDT (ETH address only for now)
+- Support for Tezos/XTZ
 
 ## Installation
 
