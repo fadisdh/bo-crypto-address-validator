@@ -40,7 +40,7 @@
     "browser",
     "nodejs"
   ],
-  "version": "0.2.9",
+  "version": "0.2.10",
   "author": "Fadi Saadeh <fadisdh@gmail.com>",
   "homepage": "https://github.com/fadisdh/bo-crypto-address-validator",
   "license": "MIT",
