@@ -13,6 +13,7 @@ Forked from [ognus/wallet-address-validator](https://github.com/ognus/wallet-add
 - Support ofr Algorand/ALG
 - Support for Tether/USDT (ETH address only for now)
 - Support for Tezos/XTZ
+- Support for CHAINLINK
 
 ## Installation
 
@@ -110,6 +111,8 @@ npm install bo-crypto-address-validator
 * Zclassic/ZCL, `'zclassic'` or `'ZCL'`
 
 * ZenCash/ZEN, `'zencash'` or `'ZEN'`
+
+* CHAINLINK/LINK, `'chainlink'` or `'link'`
 
 
 ### Usage example

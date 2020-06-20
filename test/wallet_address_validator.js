@@ -290,6 +290,8 @@ describe('WAValidator.validate()', function () {
             valid('0xD1220A0cf47c7B9Be7A2E6BA89F429762e7b9aDb', 'ETZ');
             valid('0xD1220A0cf47c7B9Be7A2E6BA89F429762e7b9aDb', 'callisto');
             valid('0xD1220A0cf47c7B9Be7A2E6BA89F429762e7b9aDb', 'CLO');
+            valid('0xE37c0D48d68da5c5b14E5c1a9f1CFE802776D9FF', 'LINK');
+            valid('0x5aAeb6053F3E94C9b9A09f33669435E7Ef1BeAed', 'chainlink');
         });
 
         it('should return true for correct Ripple addresses', function () {
@@ -538,6 +540,7 @@ describe('WAValidator.validate()', function () {
             invalid('0x02fcd51aAbB814FfFe17908fbc888A8975D839A5', 'ethereumclassic');
             invalid('0x02fcd51aAbB814FfFe17908fbc888A8975D839A5', 'etherzero');
             invalid('0x02fcd51aAbB814FfFe17908fbc888A8975D839A5', 'callisto');
+            invalid('0XD1220A0CF47C7B9BE7A2E6BA89F429762E7B9ADB', 'chainlink');
         });
 
         it('should return false for incorrect ripple addresses', function () {

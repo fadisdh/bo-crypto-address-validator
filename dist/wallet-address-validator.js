@@ -8227,6 +8227,10 @@ var CURRENCIES = [{
     name: 'tezos',
     symbol: 'xtz',
     validator: XTZValidator
+},{
+    name: 'chainlink',
+    symbol: 'link',
+    validator: ETHValidator,
 }];
 
 
