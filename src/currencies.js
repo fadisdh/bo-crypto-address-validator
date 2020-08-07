@@ -253,6 +253,18 @@ var CURRENCIES = [{
     name: 'chainlink',
     symbol: 'link',
     validator: ETHValidator,
+},{
+    name: 'dai',
+    symbol: 'dai',
+    validator: ETHValidator,
+},{
+    name: 'kyber',
+    symbol: 'knc',
+    validator: ETHValidator,
+},{
+    name: 'augur',
+    symbol: 'rep',
+    validator: ETHValidator,
 }];
 
 

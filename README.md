@@ -14,6 +14,7 @@ Forked from [ognus/wallet-address-validator](https://github.com/ognus/wallet-add
 - Support for Tether/USDT (ETH address only for now)
 - Support for Tezos/XTZ
 - Support for CHAINLINK
+- Support for DAI, KNC and REP
 
 ## Installation
 
@@ -113,6 +114,12 @@ npm install bo-crypto-address-validator
 * ZenCash/ZEN, `'zencash'` or `'ZEN'`
 
 * CHAINLINK/LINK, `'chainlink'` or `'link'`
+
+* Dai/DAI, `'dai'` or `'dai'`
+
+* Kyber/KNC, `'kyber'` or `'knc'`
+
+* Augur/REP, `'augur'` or `'rep'`
 
 
 ### Usage example
