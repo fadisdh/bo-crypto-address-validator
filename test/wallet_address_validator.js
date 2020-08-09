@@ -296,6 +296,9 @@ describe('WAValidator.validate()', function () {
             valid('0xE37c0D48d68da5c5b14E5c1a9f1CFE802776D9FF', 'Dai');
             valid('0xE37c0D48d68da5c5b14E5c1a9f1CFE802776D9FF', 'DAI');
 
+            valid('0xE37c0D48d68da5c5b14E5c1a9f1CFE802776D9FF', 'Maker');
+            valid('0xE37c0D48d68da5c5b14E5c1a9f1CFE802776D9FF', 'MKR');
+
             valid('0xE37c0D48d68da5c5b14E5c1a9f1CFE802776D9FF', 'kyber');
             valid('0x5aAeb6053F3E94C9b9A09f33669435E7Ef1BeAed', 'KNC');
 
@@ -552,6 +555,7 @@ describe('WAValidator.validate()', function () {
             invalid('0XD1220A0CF47C7B9BE7A2E6BA89F429762E7B9ADB', 'chainlink');
 
             invalid('0XD1220A0CF47C7B9BE7A2E6BA89F429762E7B9ADB', 'DAI');
+            invalid('0XD1220A0CF47C7B9BE7A2E6BA89F429762E7B9ADB', 'MKR');
             invalid('0XD1220A0CF47C7B9BE7A2E6BA89F429762E7B9ADB', 'KNC');
             invalid('0XD1220A0CF47C7B9BE7A2E6BA89F429762E7B9ADB', 'REP');
         });

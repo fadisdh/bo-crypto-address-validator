@@ -24,6 +24,7 @@
     "zcash",
     "qtum",
     "DAI",
+    "MKR",
     "KNC",
     "REP",
     "Augur",
@@ -44,7 +45,7 @@
     "browser",
     "nodejs"
   ],
-  "version": "0.2.11",
+  "version": "0.2.12",
   "author": "Fadi Saadeh <fadisdh@gmail.com>",
   "homepage": "https://github.com/fadisdh/bo-crypto-address-validator",
   "license": "MIT",

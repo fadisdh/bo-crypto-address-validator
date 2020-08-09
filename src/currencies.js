@@ -258,6 +258,10 @@ var CURRENCIES = [{
     symbol: 'dai',
     validator: ETHValidator,
 },{
+    name: 'maker',
+    symbol: 'mkr',
+    validator: ETHValidator,
+},{
     name: 'kyber',
     symbol: 'knc',
     validator: ETHValidator,
