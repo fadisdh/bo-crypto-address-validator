@@ -269,6 +269,22 @@ var CURRENCIES = [{
     name: 'augur',
     symbol: 'rep',
     validator: ETHValidator,
+},{
+    name: 'uniswap',
+    symbol: 'uni',
+    validator: ETHValidator,
+},{
+    name: 'compound',
+    symbol: 'comp',
+    validator: ETHValidator,
+},{
+    name: 'synthetix',
+    symbol: 'snx',
+    validator: ETHValidator,
+},{
+    name: 'yearn.finance',
+    symbol: 'yfi',
+    validator: ETHValidator,
 }];
 
 

@@ -304,6 +304,18 @@ describe('WAValidator.validate()', function () {
 
             valid('0xE37c0D48d68da5c5b14E5c1a9f1CFE802776D9FF', 'Augur');
             valid('0x5aAeb6053F3E94C9b9A09f33669435E7Ef1BeAed', 'REP');
+
+            valid('0xE37c0D48d68da5c5b14E5c1a9f1CFE802776D9FF', 'Uniswap');
+            valid('0x5aAeb6053F3E94C9b9A09f33669435E7Ef1BeAed', 'UNI');
+
+            valid('0xE37c0D48d68da5c5b14E5c1a9f1CFE802776D9FF', 'Compound');
+            valid('0x5aAeb6053F3E94C9b9A09f33669435E7Ef1BeAed', 'COMP');
+
+            valid('0xE37c0D48d68da5c5b14E5c1a9f1CFE802776D9FF', 'Synthetix');
+            valid('0x5aAeb6053F3E94C9b9A09f33669435E7Ef1BeAed', 'SNX');
+
+            valid('0xE37c0D48d68da5c5b14E5c1a9f1CFE802776D9FF', 'yearn.finance');
+            valid('0x5aAeb6053F3E94C9b9A09f33669435E7Ef1BeAed', 'YFI');
         });
 
         it('should return true for correct Ripple addresses', function () {
@@ -558,6 +570,11 @@ describe('WAValidator.validate()', function () {
             invalid('0XD1220A0CF47C7B9BE7A2E6BA89F429762E7B9ADB', 'MKR');
             invalid('0XD1220A0CF47C7B9BE7A2E6BA89F429762E7B9ADB', 'KNC');
             invalid('0XD1220A0CF47C7B9BE7A2E6BA89F429762E7B9ADB', 'REP');
+
+            invalid('0XD1220A0CF47C7B9BE7A2E6BA89F429762E7B9ADB', 'COMP');
+            invalid('0XD1220A0CF47C7B9BE7A2E6BA89F429762E7B9ADB', 'YFI');
+            invalid('0XD1220A0CF47C7B9BE7A2E6BA89F429762E7B9ADB', 'UNI');
+            invalid('0XD1220A0CF47C7B9BE7A2E6BA89F429762E7B9ADB', 'SNX');
         });
 
         it('should return false for incorrect ripple addresses', function () {
