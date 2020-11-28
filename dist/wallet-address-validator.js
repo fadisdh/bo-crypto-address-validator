@@ -8263,6 +8263,10 @@ var CURRENCIES = [{
     name: 'yearn.finance',
     symbol: 'yfi',
     validator: ETHValidator,
+},{
+    name: 'balancer',
+    symbol: 'bal',
+    validator: ETHValidator,
 }];
 
 

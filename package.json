@@ -32,6 +32,7 @@
     "YFI",
     "COMP",
     "SNX",
+    "BAL",
     "altcoin",
     "bankex",
     "monero",
@@ -49,7 +50,7 @@
     "browser",
     "nodejs"
   ],
-  "version": "0.2.13",
+  "version": "0.2.14",
   "author": "Fadi Saadeh <fadisdh@gmail.com>",
   "homepage": "https://github.com/fadisdh/bo-crypto-address-validator",
   "license": "MIT",

@@ -124,6 +124,11 @@ npm install bo-crypto-address-validator
 
 * Augur/REP, `'augur'` or `'REP'`
 
+* Uniswap/UNI, `'uniswap'` or `'UNI'`
+* Compound/COMP, `'compound'` or `'COMP'`
+* Synthetix/SNX, `'synthetix'` or `'SNX'`
+* yearn.finance/YFI, `'yearn.finance'` or `'YFI'`
+* Balancer/BAL, `'balancer'` or `'BAL'`
 
 ### Usage example
 

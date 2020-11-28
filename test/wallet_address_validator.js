@@ -316,6 +316,9 @@ describe('WAValidator.validate()', function () {
 
             valid('0xE37c0D48d68da5c5b14E5c1a9f1CFE802776D9FF', 'yearn.finance');
             valid('0x5aAeb6053F3E94C9b9A09f33669435E7Ef1BeAed', 'YFI');
+
+            valid('0xE37c0D48d68da5c5b14E5c1a9f1CFE802776D9FF', 'Balancer');
+            valid('0x5aAeb6053F3E94C9b9A09f33669435E7Ef1BeAed', 'BAL');
         });
 
         it('should return true for correct Ripple addresses', function () {
@@ -575,6 +578,7 @@ describe('WAValidator.validate()', function () {
             invalid('0XD1220A0CF47C7B9BE7A2E6BA89F429762E7B9ADB', 'YFI');
             invalid('0XD1220A0CF47C7B9BE7A2E6BA89F429762E7B9ADB', 'UNI');
             invalid('0XD1220A0CF47C7B9BE7A2E6BA89F429762E7B9ADB', 'SNX');
+            invalid('0XD1220A0CF47C7B9BE7A2E6BA89F429762E7B9ADB', 'BAL');
         });
 
         it('should return false for incorrect ripple addresses', function () {
