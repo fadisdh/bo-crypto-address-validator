@@ -319,6 +319,18 @@ describe('WAValidator.validate()', function () {
 
             valid('0xE37c0D48d68da5c5b14E5c1a9f1CFE802776D9FF', 'Balancer');
             valid('0x5aAeb6053F3E94C9b9A09f33669435E7Ef1BeAed', 'BAL');
+
+            valid('0xE37c0D48d68da5c5b14E5c1a9f1CFE802776D9FF', 'LOOPRING');
+            valid('0x5aAeb6053F3E94C9b9A09f33669435E7Ef1BeAed', 'LRC');
+
+            valid('0xE37c0D48d68da5c5b14E5c1a9f1CFE802776D9FF', 'ENJIN');
+            valid('0x5aAeb6053F3E94C9b9A09f33669435E7Ef1BeAed', 'ENJ');
+
+            valid('0xE37c0D48d68da5c5b14E5c1a9f1CFE802776D9FF', 'POLYGON');
+            valid('0x5aAeb6053F3E94C9b9A09f33669435E7Ef1BeAed', 'MATIC');
+
+            valid('0xE37c0D48d68da5c5b14E5c1a9f1CFE802776D9FF', 'DECENTRALAND');
+            valid('0x5aAeb6053F3E94C9b9A09f33669435E7Ef1BeAed', 'MANA');
         });
 
         it('should return true for correct Ripple addresses', function () {
@@ -579,6 +591,10 @@ describe('WAValidator.validate()', function () {
             invalid('0XD1220A0CF47C7B9BE7A2E6BA89F429762E7B9ADB', 'UNI');
             invalid('0XD1220A0CF47C7B9BE7A2E6BA89F429762E7B9ADB', 'SNX');
             invalid('0XD1220A0CF47C7B9BE7A2E6BA89F429762E7B9ADB', 'BAL');
+            invalid('0XD1220A0CF47C7B9BE7A2E6BA89F429762E7B9ADB', 'LRC');
+            invalid('0XD1220A0CF47C7B9BE7A2E6BA89F429762E7B9ADB', 'ENJ');
+            invalid('0XD1220A0CF47C7B9BE7A2E6BA89F429762E7B9ADB', 'MATIC');
+            invalid('0XD1220A0CF47C7B9BE7A2E6BA89F429762E7B9ADB', 'MANA');
         });
 
         it('should return false for incorrect ripple addresses', function () {

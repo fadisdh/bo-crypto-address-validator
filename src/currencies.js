@@ -274,6 +274,22 @@ var CURRENCIES = [{
     symbol: 'uni',
     validator: ETHValidator,
 },{
+    name: 'loopring',
+    symbol: 'lrc',
+    validator: ETHValidator,
+},{
+    name: 'enjin',
+    symbol: 'enj',
+    validator: ETHValidator,
+},{
+    name: 'polygon',
+    symbol: 'matic',
+    validator: ETHValidator,
+},{
+    name: 'decentraland',
+    symbol: 'mana',
+    validator: ETHValidator,
+},{
     name: 'compound',
     symbol: 'comp',
     validator: ETHValidator,

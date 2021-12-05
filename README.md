@@ -15,7 +15,7 @@ Forked from [ognus/wallet-address-validator](https://github.com/ognus/wallet-add
 - Support for Tezos/XTZ
 - Support for CHAINLINK
 - Support for DAI, KNC and REP
-- Support for Maker/MKR
+- Support for ENJ, LRC, MATIC, MANA
 
 ## Installation
 
@@ -129,6 +129,11 @@ npm install bo-crypto-address-validator
 * Synthetix/SNX, `'synthetix'` or `'SNX'`
 * yearn.finance/YFI, `'yearn.finance'` or `'YFI'`
 * Balancer/BAL, `'balancer'` or `'BAL'`
+
+* LOOPRING/LRC, `'LOOPRING'` or `'LRC'`
+* POLYGON/MATIC, `'POLYGON'` or `'MATIC'`
+* DECENTRALAND/MANA, `'DECENTRALAND'` or `'MANA'`
+* ENJIN/ENJ, `'ENJIN'` or `'ENJ'`
 
 ### Usage example
 
